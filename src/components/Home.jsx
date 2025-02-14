@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import { setCategory, setMarkAsDone } from "../redux/expenseSlice";
 import ExpenseTable from "./ExpenseTable";
 import useGetExpenses from "../hooks/useGetExpenses";
+import Footer from "./Footer";
 
 const Home = () => {
     useGetExpenses();
@@ -80,6 +81,7 @@ const Home = () => {
                 </div>
                 <ExpenseTable />
             </div>
+            <Footer/>
         </div>
     );
 };
